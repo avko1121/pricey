@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:itemBackground">#FA0B0B</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#FDCC5B</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="customtabletstyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+
+</resources>
