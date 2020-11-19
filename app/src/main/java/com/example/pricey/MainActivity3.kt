@@ -27,10 +27,10 @@ class MainActivity3 : AppCompatActivity() {
             }
         })
 
-            progressBar.max = 10
-            val currentprogress = 4
+            progressBar.max = 100
+            val currentprogress = 40
             ObjectAnimator.ofInt(progressBar,"progress",currentprogress)
-                .setDuration(900)
+                .setDuration(1200)
                 .start()
 
 
@@ -39,6 +39,7 @@ class MainActivity3 : AppCompatActivity() {
                 if(textView3.text.isNotEmpty()){
                 val intent = Intent(this, MainActivity4::class.java)
                 startActivity(intent)
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 }
             }
 

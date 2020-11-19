@@ -12,16 +12,17 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        progressBar.max = 10
-        val currentprogress = 7
+        progressBar.max = 100
+        val currentprogress = 70
         ObjectAnimator.ofInt(progressBar,"progress",currentprogress)
-            .setDuration(900)
+            .setDuration(1200)
             .start()
 
 
         sportbutton.setOnClickListener {
             val intent = Intent(this, MainActivity5::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
 
 

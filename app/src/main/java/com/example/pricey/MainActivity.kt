@@ -10,13 +10,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         login.setOnClickListener {
+
             if(username.text.isNotEmpty() && password.text.isNotEmpty()){
                 val intent = Intent(this, MainActivity2::class.java)
                 startActivity(intent)
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
 
+
+            }
+            textView.setOnClickListener {
+                val intent = Intent(this, MainActivity8::class.java)
+                startActivity(intent)
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             }
         }
     }
-
-
 }

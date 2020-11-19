@@ -13,19 +13,24 @@ class MainActivity2 : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+
         }
         button2.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
+
+
         }
 
 
 
 
-        progressBar.max = 10
+        progressBar.max = 100
         val currentprogress = 0
         ObjectAnimator.ofInt(progressBar,"progress",currentprogress)
             .start()
+
 
 
 

@@ -14,11 +14,11 @@ class MainActivity5 : AppCompatActivity() {
         setContentView(R.layout.activity_main5)
 
 
-        progressBar.max = 10
+        progressBar.max = 100
         progressBar.isActivated = true
-        val currentprogress = 10
+        val currentprogress = 100
         ObjectAnimator.ofInt(progressBar,"progress",currentprogress)
-            .setDuration(900)
+            .setDuration(1200)
             .start()
         productbutton.setOnClickListener {
             intent = Intent(this, MainActivity6::class.java)

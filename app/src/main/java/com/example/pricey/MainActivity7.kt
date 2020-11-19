@@ -1,21 +1,21 @@
 package com.example.pricey
 
 import adaptors.viewpageradaptor
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import fragments.CardFragment
 import fragments.CashFragment
+import kotlinx.android.synthetic.main.activity_main6.*
 import kotlinx.android.synthetic.main.activity_main7.*
 import kotlinx.android.synthetic.main.fragment_card.*
+import kotlinx.android.synthetic.main.fragment_cash.*
 
 class MainActivity7 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main7)
         setuptabs()
-
-
-
 
 
 
@@ -31,7 +31,7 @@ class MainActivity7 : AppCompatActivity() {
         tabs.getTabAt(1)!!.setIcon(R.drawable.ic_baseline_attach_money_24)
 
 
+
     }
 
-
-}
+    }
